@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: create-route
+spec:
+  containers:
+    - name: create-route
+      image: docker.io/daisyycguo/create-route

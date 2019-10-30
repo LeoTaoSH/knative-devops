@@ -51,7 +51,7 @@ func mail(revision string) {
 	auth := smtp.PlainAuth(
 		"",
 		"apikey",
-		"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",
+		"XXXX",
 		"smtp.sendgrid.net",
 	)
 	body := fmt.Sprintf("Subject: Notification\r\n\r\nYour revision %s has been created.", revision)
