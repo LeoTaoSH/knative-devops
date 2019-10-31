@@ -6,10 +6,16 @@
 
 ```
 kn service create --image docker.io/daisyycguo/eventdetails event-details
+kn service create --image docker.io/daisyycguo/create-route create-route
+kn service create --image docker.io/daisyycguo/service-details service-details
 ```
 
 ```
 kn service update event-details --image docker.io/daisyycguo/eventdetails:latest 
+
+kn service update event-details --image docker.io/daisyycguo/eventdetails:latest --env EMAIL=zhanggbj@cn.ibm.com
+
+kn service update service-details --env EMAIL=zhanggbj@cn.ibm.com
 ```
 
 ```

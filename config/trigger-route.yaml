@@ -1,0 +1,14 @@
+apiVersion: eventing.knative.dev/v1alpha1
+kind: Trigger
+metadata:
+  name: trigger-route
+spec:
+  broker: default
+  filter:
+    sourceAndType:
+      type: dev.knative.apiserver.ref.add
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1alpha1
+      kind: Service
+      name: create-route
