@@ -23,7 +23,7 @@ kn service create --image docker.io/daisyycguo/event_display-bb44423e21d22fe9366
 ```
 
 Test:
-kn service create --image docker.io/ibmcom/fib-knative fib-knative
+kn service create --image docker.io/ibmcom/fib-knative fib-knative --service-account route-sa
 kn service delete fib-knative
 
 2. Create a Broker
