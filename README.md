@@ -8,6 +8,7 @@
 kn service create --image docker.io/daisyycguo/eventdetails event-details
 kn service create --image docker.io/daisyycguo/create-route create-route
 kn service create --image docker.io/daisyycguo/service-details service-details
+kn service create --image docker.io/guoger/echo:latest echo
 ```
 
 ```

@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: el-listener
+  namespace: default
+spec:
+  rules:
+  - host: el-listener.knativecc-guoyc.au-syd.containers.appdomain.cloud
+    http:
+      paths:
+      - backend:
+          serviceName: el-listener
+          servicePort: 8080
+        path: /
