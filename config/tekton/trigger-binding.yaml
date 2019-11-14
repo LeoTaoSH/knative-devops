@@ -1,0 +1,12 @@
+apiVersion: tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  name: my-pipeline-binding
+spec:
+  params:
+  - name: gittag
+    value: $(body.ref)
+  - name: gitrepositoryurl
+    value: $(body.repository.html_url)
+  - name: contenttype
+    value: $(header.Content-Type)
