@@ -12,7 +12,7 @@ func main() {
 	auth := smtp.PlainAuth(
 		"",
 		"apikey",
-		"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",
+		"SG.4CGapyV1R7XXXXX",
 		"smtp.sendgrid.net",
 	)
 	revision := "test111"
